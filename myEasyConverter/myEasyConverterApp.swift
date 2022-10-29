@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct myEasyConverterApp: App {
+    
+    @StateObject private var model = ModelData()
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView(currencyPair: ModelData().currencyPairs[0])
+                .environmentObject(model)
         }
     }
 }

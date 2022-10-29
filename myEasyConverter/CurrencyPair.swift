@@ -16,5 +16,5 @@ struct CurrencyPair: Hashable, Codable, Identifiable {
     var sortedID: Int
     var currentRate: Double
     var currentAmount: Double
-    var dateRequest: Date
+    var dateRequest: String
 }

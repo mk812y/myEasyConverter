@@ -11,15 +11,6 @@ class ModelData: ObservableObject {
     
     @Published var currencyPairs: [CurrencyPair] = load("testRates.json")
     
-    // MARK: - Publishers
-    
-    @Published var isRunning = false
-    
-    // MARK: - Methods
-    
-    func playPauseTimer() {
-        isRunning.toggle()
-    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
