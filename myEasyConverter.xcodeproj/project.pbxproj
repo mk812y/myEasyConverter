@@ -11,6 +11,8 @@
 		A50E3DF5290AF13B0030D821 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E3DF4290AF13B0030D821 /* ContentView.swift */; };
 		A50E3DF7290AF13D0030D821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50E3DF6290AF13D0030D821 /* Assets.xcassets */; };
 		A50E3DFA290AF13D0030D821 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50E3DF9290AF13D0030D821 /* Preview Assets.xcassets */; };
+		A50E3E01290AF7700030D821 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E3E00290AF7700030D821 /* API.swift */; };
+		A5D5906A290D833900B8E78F /* testRates.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D59069290D833900B8E78F /* testRates.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A50E3DF4290AF13B0030D821 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A50E3DF6290AF13D0030D821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50E3DF9290AF13D0030D821 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A50E3E00290AF7700030D821 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A5D59069290D833900B8E78F /* testRates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testRates.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				A50E3DF2290AF13B0030D821 /* myEasyConverterApp.swift */,
 				A50E3DF4290AF13B0030D821 /* ContentView.swift */,
+				A5D59069290D833900B8E78F /* testRates.json */,
+				A50E3E00290AF7700030D821 /* API.swift */,
 				A50E3DF6290AF13D0030D821 /* Assets.xcassets */,
 				A50E3DF8290AF13D0030D821 /* Preview Content */,
 			);
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D5906A290D833900B8E78F /* testRates.json in Resources */,
 				A50E3DFA290AF13D0030D821 /* Preview Assets.xcassets in Resources */,
 				A50E3DF7290AF13D0030D821 /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A50E3DF5290AF13B0030D821 /* ContentView.swift in Sources */,
+				A50E3E01290AF7700030D821 /* API.swift in Sources */,
 				A50E3DF3290AF13B0030D821 /* myEasyConverterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
