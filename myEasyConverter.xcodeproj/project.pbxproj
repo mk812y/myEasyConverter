@@ -12,6 +12,7 @@
 		A50E3DF7290AF13D0030D821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50E3DF6290AF13D0030D821 /* Assets.xcassets */; };
 		A50E3DFA290AF13D0030D821 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50E3DF9290AF13D0030D821 /* Preview Assets.xcassets */; };
 		A50E3E01290AF7700030D821 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E3E00290AF7700030D821 /* API.swift */; };
+		A597A8BD290EC8C000FD10A1 /* CurrencyPairCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A8BC290EC8C000FD10A1 /* CurrencyPairCard.swift */; };
 		A5D5906A290D833900B8E78F /* testRates.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D59069290D833900B8E78F /* testRates.json */; };
 		A5D5906C290D858000B8E78F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D5906B290D858000B8E78F /* ModelData.swift */; };
 		A5D5906E290D860C00B8E78F /* CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D5906D290D860C00B8E78F /* CurrencyPair.swift */; };
@@ -25,6 +26,7 @@
 		A50E3DF6290AF13D0030D821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50E3DF9290AF13D0030D821 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A50E3E00290AF7700030D821 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A597A8BC290EC8C000FD10A1 /* CurrencyPairCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairCard.swift; sourceTree = "<group>"; };
 		A5D59069290D833900B8E78F /* testRates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testRates.json; sourceTree = "<group>"; };
 		A5D5906B290D858000B8E78F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A5D5906D290D860C00B8E78F /* CurrencyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPair.swift; sourceTree = "<group>"; };
@@ -62,12 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				A50E3DF2290AF13B0030D821 /* myEasyConverterApp.swift */,
-				A50E3DF4290AF13B0030D821 /* MainView.swift */,
-				A5D59069290D833900B8E78F /* testRates.json */,
-				A5D5906B290D858000B8E78F /* ModelData.swift */,
-				A5D5906D290D860C00B8E78F /* CurrencyPair.swift */,
-				A50E3E00290AF7700030D821 /* API.swift */,
-				A5D5906F290D8C2900B8E78F /* trash.swift */,
+				A597A8B9290EC86900FD10A1 /* View */,
+				A597A8BA290EC87400FD10A1 /* Model */,
+				A597A8BB290EC88700FD10A1 /* Bin and Test */,
 				A50E3DF6290AF13D0030D821 /* Assets.xcassets */,
 				A50E3DF8290AF13D0030D821 /* Preview Content */,
 			);
@@ -80,6 +79,34 @@
 				A50E3DF9290AF13D0030D821 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A597A8B9290EC86900FD10A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A50E3DF4290AF13B0030D821 /* MainView.swift */,
+				A597A8BC290EC8C000FD10A1 /* CurrencyPairCard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A597A8BA290EC87400FD10A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5906B290D858000B8E78F /* ModelData.swift */,
+				A5D5906D290D860C00B8E78F /* CurrencyPair.swift */,
+				A50E3E00290AF7700030D821 /* API.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A597A8BB290EC88700FD10A1 /* Bin and Test */ = {
+			isa = PBXGroup;
+			children = (
+				A5D59069290D833900B8E78F /* testRates.json */,
+				A5D5906F290D8C2900B8E78F /* trash.swift */,
+			);
+			path = "Bin and Test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +183,7 @@
 				A5D59070290D8C2900B8E78F /* trash.swift in Sources */,
 				A50E3DF5290AF13B0030D821 /* MainView.swift in Sources */,
 				A5D5906C290D858000B8E78F /* ModelData.swift in Sources */,
+				A597A8BD290EC8C000FD10A1 /* CurrencyPairCard.swift in Sources */,
 				A5D5906E290D860C00B8E78F /* CurrencyPair.swift in Sources */,
 				A50E3E01290AF7700030D821 /* API.swift in Sources */,
 				A50E3DF3290AF13B0030D821 /* myEasyConverterApp.swift in Sources */,

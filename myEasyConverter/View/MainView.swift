@@ -19,10 +19,14 @@ struct MainView: View {
             ForEach(currencyPairs, id: \.self) { currencyPair in
                 VStack {
                     HStack {
-                        Text("\(currencyPair.forex1) / \(currencyPair.forex2)")
-                        Text("\(currencyPair.currentRate)")
-                        Text("\(currencyPair.currentAmount)")
-                        Text("\(currencyPair.dateRequest)")
+                        Text(String(format: "%.2f", currencyPair.currentAmount))
+                        Text("\(currencyPair.forex1)")
+                        VStack {
+                            Image(systemName: "arrow.left.and.right")
+                            Text(String(format: "%.4f", currencyPair.currentRate))
+                        }
+                        Text(String(format: "%.2f", currencyPair.currentAmount * currencyPair.currentRate))
+                        Text("\(currencyPair.forex2)")
                     }
                 }
             }

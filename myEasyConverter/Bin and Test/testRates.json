@@ -5,9 +5,9 @@
     "forex2": "USD",
     "sortedFix": true,
     "sortedID": 2,
-    "currentRate": 0.054,
-    "currentAmount": 750,
-    "dateRequest": "2022-10-29T17:41:31.511Z",
+    "currentRate": 0.0537,
+    "currentAmount": 100,
+    "dateRequest": "2022-10-30T17:41:31.511Z",
     "lastRequests": [
       {
         "date": "2022-06-06T18:25:43.511Z",
@@ -37,9 +37,9 @@
     "forex2": "RUB",
     "sortedFix": true,
     "sortedID": 1,
-    "currentRate": 3.33,
-    "currentAmount": 90,
-    "dateRequest": "2022-10-29T17:42:31.511Z",
+    "currentRate": 3.3089,
+    "currentAmount": 100,
+    "dateRequest": "2022-10-30T17:42:31.511Z",
     "lastRequests": [
       {
         "date": "2022-06-24T18:25:43.511Z",
@@ -69,9 +69,9 @@
     "forex2": "EUR",
     "sortedFix": false,
     "sortedID": 0,
-    "currentRate": 0.054,
-    "currentAmount": 360,
-    "dateRequest": "2022-10-29T17:43:31.511Z",
+    "currentRate": 0.0535,
+    "currentAmount": 100,
+    "dateRequest": "2022-10-30T17:43:31.511Z",
     "lastRequests": [
       {
         "date": "2022-07-12T18:25:43.511Z",
@@ -101,9 +101,9 @@
     "forex2": "RUB",
     "sortedFix": false,
     "sortedID": 0,
-    "currentRate": 61.53,
-    "currentAmount": 1,
-    "dateRequest": "2022-10-29T17:44:31.511Z",
+    "currentRate": 61.5913,
+    "currentAmount": 100,
+    "dateRequest": "2022-10-30T17:44:31.511Z",
     "lastRequests": [
       {
         "date": "2022-06-27T18:25:43.511Z",
@@ -133,14 +133,46 @@
     "forex2": "RUB",
     "sortedFix": false,
     "sortedID": 31,
-    "currentRate": 61.31,
-    "currentAmount": 1000,
-    "dateRequest": "2022-10-29T18:44:31.511Z",
+    "currentRate": 61.8776,
+    "currentAmount": 100,
+    "dateRequest": "2022-10-30T18:44:31.511Z",
     "lastRequests": [
       {
         "date": "2022-06-29T18:25:43.511Z",
         "rate": 54.71,
         "amount": 355
+      },
+      {
+        "date": "2022-03-09T18:25:43.511Z",
+        "rate": 144.24,
+        "amount": 125
+      },
+      {
+        "date": "2022-02-17T18:25:43.511Z",
+        "rate": 86.57,
+        "amount": 900
+      },
+      {
+        "date": "2021-10-01T18:25:43.511Z",
+        "rate": 83.08,
+        "amount": 110
+      }
+    ]
+  },
+  {
+    "id": 890456,
+    "forex1": "USD",
+    "forex2": "EUR",
+    "sortedFix": true,
+    "sortedID": 1000,
+    "currentRate": 0.9954,
+    "currentAmount": 1,
+    "dateRequest": "2022-10-30T18:44:31.511Z",
+    "lastRequests": [
+      {
+        "date": "2022-06-29T18:25:43.511Z",
+        "rate": 54.71,
+        "amount": 876
       },
       {
         "date": "2022-03-09T18:25:43.511Z",
