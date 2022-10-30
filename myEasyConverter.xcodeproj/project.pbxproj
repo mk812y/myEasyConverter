@@ -14,6 +14,7 @@
 		A50E3E01290AF7700030D821 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E3E00290AF7700030D821 /* API.swift */; };
 		A51D28A0290EDCD000594118 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D289F290EDCD000594118 /* RectangleCard.swift */; };
 		A51D28A3290EDDF400594118 /* ButtonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D28A2290EDDF400594118 /* ButtonCard.swift */; };
+		A51D28A5290EDE7B00594118 /* RateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D28A4290EDE7B00594118 /* RateCard.swift */; };
 		A597A8BD290EC8C000FD10A1 /* CurrencyPairCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A8BC290EC8C000FD10A1 /* CurrencyPairCard.swift */; };
 		A597A8BF290ECC3C00FD10A1 /* CurrencyPairRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A8BE290ECC3C00FD10A1 /* CurrencyPairRow.swift */; };
 		A5D5906A290D833900B8E78F /* testRates.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D59069290D833900B8E78F /* testRates.json */; };
@@ -31,6 +32,7 @@
 		A50E3E00290AF7700030D821 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		A51D289F290EDCD000594118 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		A51D28A2290EDDF400594118 /* ButtonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCard.swift; sourceTree = "<group>"; };
+		A51D28A4290EDE7B00594118 /* RateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCard.swift; sourceTree = "<group>"; };
 		A597A8BC290EC8C000FD10A1 /* CurrencyPairCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairCard.swift; sourceTree = "<group>"; };
 		A597A8BE290ECC3C00FD10A1 /* CurrencyPairRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairRow.swift; sourceTree = "<group>"; };
 		A5D59069290D833900B8E78F /* testRates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testRates.json; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				A51D289F290EDCD000594118 /* RectangleCard.swift */,
 				A51D28A2290EDDF400594118 /* ButtonCard.swift */,
+				A51D28A4290EDE7B00594118 /* RateCard.swift */,
 			);
 			path = HelpersView;
 			sourceTree = "<group>";
@@ -100,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				A50E3DF4290AF13B0030D821 /* MainView.swift */,
-				A597A8BC290EC8C000FD10A1 /* CurrencyPairCard.swift */,
 				A597A8BE290ECC3C00FD10A1 /* CurrencyPairRow.swift */,
+				A597A8BC290EC8C000FD10A1 /* CurrencyPairCard.swift */,
 				A51D28A1290EDD0E00594118 /* HelpersView */,
 			);
 			path = View;
@@ -205,6 +208,7 @@
 				A50E3E01290AF7700030D821 /* API.swift in Sources */,
 				A51D28A0290EDCD000594118 /* RectangleCard.swift in Sources */,
 				A50E3DF3290AF13B0030D821 /* myEasyConverterApp.swift in Sources */,
+				A51D28A5290EDE7B00594118 /* RateCard.swift in Sources */,
 				A597A8BF290ECC3C00FD10A1 /* CurrencyPairRow.swift in Sources */,
 				A51D28A3290EDDF400594118 /* ButtonCard.swift in Sources */,
 			);

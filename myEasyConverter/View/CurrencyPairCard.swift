@@ -22,42 +22,30 @@ struct CurrencyPairCard: View {
         ZStack {
             Color(.systemGray6)
                 .ignoresSafeArea()
-            VStack {
-                ZStack {
-                    RectangleCard()
-                    HStack {
-                        VStack {
-                            Text("у меня есть")
-                            HStack {
-                                Text("100.00")
-                                Text("TRY")
-                                Text(flag1)
-                            }
-                            HStack {
-                                Text("1 TRY")
-                                Text("=")
-                                Text("0.0537")
-                                Text("USD")
-                            }
+            RectangleCard()
+            HStack {
+                VStack {
+                    VStack (alignment: .trailing) {
+                        Text("у меня есть")
                             .font(.caption)
-                        }
-                        
-                        VStack {
-                            Text("я получу")
-                            HStack {
-                                Text("5.37")
-                                Text("USD")
-                                Text(flag2)
-                            }
-                            HStack {
-                                Text("1 USD")
-                                Text("=")
-                                Text("18.6138")
-                                Text("TRY")
-                            }
-                            .font(.caption)
-                        }
                     }
+                    HStack {
+                        Text("100.00")
+                        Text("TRY")
+                        Text(flag1)
+                    }
+                    RateCard(forex1: "TRY", currentRate: 0.0537, forex2: "USD")
+                }
+                ButtonCard()
+                VStack {
+                    Text("я получу")
+                        .font(.caption)
+                    HStack {
+                        Text("5.37")
+                        Text("USD")
+                        Text(flag2)
+                    }
+                    RateCard(forex1: "USD", currentRate: 18.6138, forex2: "TRY")
                 }
             }
         }
