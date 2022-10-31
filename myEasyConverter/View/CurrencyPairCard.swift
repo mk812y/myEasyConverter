@@ -25,10 +25,7 @@ struct CurrencyPairCard: View {
             RectangleCard()
             HStack {
                 VStack {
-                    VStack (alignment: .trailing) {
-                        Text("у меня есть")
-                            .font(.caption)
-                    }
+                    TopTextCard(textTitle: "у меня есть")
                     HStack {
                         Text("100.00")
                         Text("TRY")
@@ -38,7 +35,7 @@ struct CurrencyPairCard: View {
                 }
                 ButtonCard()
                 VStack {
-                    Text("я получу")
+                    TopTextCard(textTitle: "я получу")
                         .font(.caption)
                     HStack {
                         Text("5.37")
