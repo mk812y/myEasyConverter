@@ -24,7 +24,7 @@ struct CurrencyPairCard: View {
                 .ignoresSafeArea()
             RectangleCard()
             HStack {
-                VStack {
+                VStack (alignment: .leading) {
                     TopTextCard(textTitle: "у меня есть")
                     HStack {
                         Text("100.00")
@@ -34,9 +34,8 @@ struct CurrencyPairCard: View {
                     RateCard(forex1: "TRY", currentRate: 0.0537, forex2: "USD")
                 }
                 ButtonCard()
-                VStack {
+                VStack (alignment: .leading) {
                     TopTextCard(textTitle: "я получу")
-                        .font(.caption)
                     HStack {
                         Text("5.37")
                         Text("USD")
