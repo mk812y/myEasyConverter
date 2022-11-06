@@ -17,7 +17,7 @@ struct RateCard: View {
             Text("1 \(forex1)")
             Text("=")
             Text(String(format: "%.4f", currentRate))
-            Text(forex2)
+            Text("\(forex2)")
         }
         .font(.caption)
     }

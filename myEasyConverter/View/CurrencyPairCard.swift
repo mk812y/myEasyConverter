@@ -9,13 +9,7 @@ import SwiftUI
 
 struct CurrencyPairCard: View {
     var currencyPair: CurrencyPair
-    var reversePair: Bool = false
-    
-    func countryFlag(countryCode: String) -> String {
-        return String(String.UnicodeScalarView(
-            countryCode.unicodeScalars.compactMap(
-                { UnicodeScalar (127397 + $0.value) })))
-    }
+    @State var reversePair: Bool = false
     
     var currentValueAmountToRate: Double {
         currencyPair.currentAmount * currencyPair.currentRate
@@ -26,9 +20,6 @@ struct CurrencyPairCard: View {
     }
     
     var body: some View {
-        let flag1 = countryFlag(countryCode: "TR")
-        let flag2 = countryFlag(countryCode: "US")
-        
         ZStack {
             Color(.systemGray6)
                 .ignoresSafeArea()
@@ -43,33 +34,7 @@ struct CurrencyPairCard: View {
                         TopTextCard(textTitle: "я получу")
                     }
                 }
-                HStack {
-                    VStack (alignment: .leading) {
-                        CurrencyCard(
-                            currencyAmount: currencyPair.currentAmount,
-                            currency: currencyPair.forex1,
-                            shortCountryCode: "TR"
-                        )
-                        RateCard(
-                            forex1: "\(currencyPair.forex1)",
-                            currentRate: currencyPair.currentRate,
-                            forex2: "\(currencyPair.forex2)"
-                        )
-                    }
-                    ButtonCard()
-                    VStack (alignment: .leading) {
-                        CurrencyCard(
-                            currencyAmount: currentValueAmountToRate,
-                            currency: currencyPair.forex2,
-                            shortCountryCode: "US"
-                        )
-                        RateCard(
-                            forex1: "\(currencyPair.forex2)",
-                            currentRate: currentRevertRate,
-                            forex2: "\(currencyPair.forex1)"
-                        )
-                    }
-                }
+                MainCurrencyCard(currencyPair: currencyPair)
             }
         }
     }
