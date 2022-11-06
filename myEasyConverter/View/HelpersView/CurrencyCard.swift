@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CurrencyCard: View {
+    let currencyAmount: Double
+    let currency: String
+    let shortCounrtCode: String
     
     func countryFlag(countryCode: String) -> String {
         return String(String.UnicodeScalarView(
@@ -16,12 +19,18 @@ struct CurrencyCard: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        let flag = countryFlag(countryCode: shortCounrtCode)
+        
+        HStack {
+            Text(String(format: "%.2f", currencyAmount))
+            Text("\(currency)")
+            Text(flag)
+        }
     }
 }
 
 struct CurrencyCard_Previews: PreviewProvider {
     static var previews: some View {
-        CurrencyCard()
+        CurrencyCard(currencyAmount: 100, currency: "USD", shortCounrtCode: "US")
     }
 }
