@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CurrencyPairCard: View {
     var currencyPair: CurrencyPair
+    var reversePair: Bool = false
     
     func countryFlag(countryCode: String) -> String {
         return String(String.UnicodeScalarView(

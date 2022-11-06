@@ -15,6 +15,7 @@
 		A51D28A0290EDCD000594118 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D289F290EDCD000594118 /* RectangleCard.swift */; };
 		A51D28A3290EDDF400594118 /* ButtonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D28A2290EDDF400594118 /* ButtonCard.swift */; };
 		A51D28A5290EDE7B00594118 /* RateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D28A4290EDE7B00594118 /* RateCard.swift */; };
+		A565E9512917EBAE00DC5BBA /* CurrencyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565E9502917EBAE00DC5BBA /* CurrencyCard.swift */; };
 		A56FED032910522E00D8DF51 /* TopTextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FED022910522E00D8DF51 /* TopTextCard.swift */; };
 		A597A8BD290EC8C000FD10A1 /* CurrencyPairCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A8BC290EC8C000FD10A1 /* CurrencyPairCard.swift */; };
 		A597A8BF290ECC3C00FD10A1 /* CurrencyPairRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A8BE290ECC3C00FD10A1 /* CurrencyPairRow.swift */; };
@@ -34,6 +35,7 @@
 		A51D289F290EDCD000594118 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		A51D28A2290EDDF400594118 /* ButtonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCard.swift; sourceTree = "<group>"; };
 		A51D28A4290EDE7B00594118 /* RateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCard.swift; sourceTree = "<group>"; };
+		A565E9502917EBAE00DC5BBA /* CurrencyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCard.swift; sourceTree = "<group>"; };
 		A56FED022910522E00D8DF51 /* TopTextCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTextCard.swift; sourceTree = "<group>"; };
 		A597A8BC290EC8C000FD10A1 /* CurrencyPairCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairCard.swift; sourceTree = "<group>"; };
 		A597A8BE290ECC3C00FD10A1 /* CurrencyPairRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairRow.swift; sourceTree = "<group>"; };
@@ -95,9 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				A51D289F290EDCD000594118 /* RectangleCard.swift */,
-				A51D28A2290EDDF400594118 /* ButtonCard.swift */,
-				A51D28A4290EDE7B00594118 /* RateCard.swift */,
 				A56FED022910522E00D8DF51 /* TopTextCard.swift */,
+				A565E9502917EBAE00DC5BBA /* CurrencyCard.swift */,
+				A51D28A4290EDE7B00594118 /* RateCard.swift */,
+				A51D28A2290EDDF400594118 /* ButtonCard.swift */,
 			);
 			path = HelpersView;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				A597A8BD290EC8C000FD10A1 /* CurrencyPairCard.swift in Sources */,
 				A5D5906E290D860C00B8E78F /* CurrencyPair.swift in Sources */,
 				A50E3E01290AF7700030D821 /* API.swift in Sources */,
+				A565E9512917EBAE00DC5BBA /* CurrencyCard.swift in Sources */,
 				A51D28A0290EDCD000594118 /* RectangleCard.swift in Sources */,
 				A50E3DF3290AF13B0030D821 /* myEasyConverterApp.swift in Sources */,
 				A51D28A5290EDE7B00594118 /* RateCard.swift in Sources */,
