@@ -45,11 +45,11 @@ struct CurrencyPairCard: View {
                 }
                 HStack {
                     VStack (alignment: .leading) {
-                        HStack {
-                            Text(String(format: "%.2f", currencyPair.currentAmount))
-                            Text("\(currencyPair.forex1)")
-                            Text(flag1)
-                        }
+                        CurrencyCard(
+                            currencyAmount: currencyPair.currentAmount,
+                            currency: currencyPair.forex1,
+                            shortCountryCode: "TR"
+                        )
                         RateCard(
                             forex1: "\(currencyPair.forex1)",
                             currentRate: currencyPair.currentRate,
@@ -58,11 +58,11 @@ struct CurrencyPairCard: View {
                     }
                     ButtonCard()
                     VStack (alignment: .leading) {
-                        HStack {
-                            Text(String(format: "%.2f", currentValueAmountToRate))
-                            Text("\(currencyPair.forex2)")
-                            Text(flag2)
-                        }
+                        CurrencyCard(
+                            currencyAmount: currentValueAmountToRate,
+                            currency: currencyPair.forex2,
+                            shortCountryCode: "US"
+                        )
                         RateCard(
                             forex1: "\(currencyPair.forex2)",
                             currentRate: currentRevertRate,
