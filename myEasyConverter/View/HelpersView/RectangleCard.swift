@@ -14,11 +14,11 @@ struct RectangleCard: View {
         RoundedRectangle(cornerRadius: 10)
             .stroke(Color(.systemGray2), lineWidth: 1)
             .frame(height: sizeHeight)
-            .padding()
+//            .padding()
         RoundedRectangle(cornerRadius: 10)
             .fill(.white)
             .frame(height: sizeHeight)
-            .padding()
+//            .padding()
     }
 }
 

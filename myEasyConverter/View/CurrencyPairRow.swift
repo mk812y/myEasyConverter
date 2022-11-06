@@ -8,25 +8,19 @@
 import SwiftUI
 
 struct CurrencyPairRow: View {
+    var currencyPair: CurrencyPair
+    var currencyPairs: [CurrencyPair] {
+        ModelData().currencyPairs
+    }
+    
     var body: some View {
         ScrollView {
             VStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .inset(by: 1)
-                    .stroke(Color.blue, lineWidth: 1)
-                    .frame(height: 110)
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(height: 110)
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(height: 110)
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(height: 110)
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(height: 110)
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(height: 110)
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(height: 110)
+                ForEach(currencyPairs, id: \.self) { currencyPair in
+                    VStack {
+                        CurrencyPairCard(currencyPair: currencyPair)
+                    }
+                }
             }
             .padding()
         }
@@ -35,6 +29,8 @@ struct CurrencyPairRow: View {
 
 struct CurrencyPairRow_Previews: PreviewProvider {
     static var previews: some View {
-        CurrencyPairRow()
+        //        CurrencyPairRow()
+        CurrencyPairRow(currencyPair: ModelData().currencyPairs[0])
+            .environmentObject(ModelData())
     }
 }
