@@ -16,6 +16,14 @@ struct CurrencyPairCard: View {
                 { UnicodeScalar (127397 + $0.value) })))
     }
     
+    var currentValueAmountToRate: Double {
+        currencyPair.currentAmount * currencyPair.currentRate
+    }
+    
+    var currentRevertRate: Double {
+        1 / currencyPair.currentRate
+    }
+    
     var body: some View {
         let flag1 = countryFlag(countryCode: "TR")
         let flag2 = countryFlag(countryCode: "US")
@@ -24,26 +32,42 @@ struct CurrencyPairCard: View {
             Color(.systemGray6)
                 .ignoresSafeArea()
             RectangleCard(sizeHeight: 70)
-            HStack {
-                VStack (alignment: .leading) {
-                    TopTextCard(textTitle: "у меня есть")
-                    HStack {
-                        Text("10000.00")
-                        Text("\(currencyPair.forex1)")
-                        Text(flag1)
+            
+            VStack {
+                HStack {
+                    VStack (alignment: .leading){
+                        TopTextCard(textTitle: "у меня есть")
                     }
-                    RateCard(forex1: "TRY", currentRate: 0.0537, forex2: "USD")
+                    VStack {
+                        TopTextCard(textTitle: "я получу")
+                    }
                 }
-                ButtonCard()
-                VStack (alignment: .leading) {
-                    TopTextCard(textTitle: "я получу")
-                    HStack {
-                        Text("5000.37")
-                        Text("\(currencyPair.currentAmount)")
-                        Text("\(currencyPair.forex2)")
-                        Text(flag2)
+                HStack {
+                    VStack (alignment: .leading) {
+                        HStack {
+                            Text(String(format: "%.2f", currencyPair.currentAmount))
+                            Text("\(currencyPair.forex1)")
+                            Text(flag1)
+                        }
+                        RateCard(
+                            forex1: "\(currencyPair.forex1)",
+                            currentRate: currencyPair.currentRate,
+                            forex2: "\(currencyPair.forex2)"
+                        )
                     }
-                    RateCard(forex1: "USD", currentRate: 18.6138, forex2: "TRY")
+                    ButtonCard()
+                    VStack (alignment: .leading) {
+                        HStack {
+                            Text(String(format: "%.2f", currentValueAmountToRate))
+                            Text("\(currencyPair.forex2)")
+                            Text(flag2)
+                        }
+                        RateCard(
+                            forex1: "\(currencyPair.forex2)",
+                            currentRate: currentRevertRate,
+                            forex2: "\(currencyPair.forex1)"
+                        )
+                    }
                 }
             }
         }
