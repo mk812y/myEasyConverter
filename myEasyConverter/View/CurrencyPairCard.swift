@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CurrencyPairCard: View {
+    var currencyPair: CurrencyPair
     
     func countryFlag(countryCode: String) -> String {
         return String(String.UnicodeScalarView(
@@ -22,13 +23,13 @@ struct CurrencyPairCard: View {
         ZStack {
             Color(.systemGray6)
                 .ignoresSafeArea()
-            RectangleCard()
+            RectangleCard(sizeHeight: 70)
             HStack {
                 VStack (alignment: .leading) {
                     TopTextCard(textTitle: "у меня есть")
                     HStack {
-                        Text("100.00")
-                        Text("TRY")
+                        Text("10000.00")
+                        Text("\(currencyPair.forex1)")
                         Text(flag1)
                     }
                     RateCard(forex1: "TRY", currentRate: 0.0537, forex2: "USD")
@@ -37,8 +38,9 @@ struct CurrencyPairCard: View {
                 VStack (alignment: .leading) {
                     TopTextCard(textTitle: "я получу")
                     HStack {
-                        Text("5.37")
-                        Text("USD")
+                        Text("5000.37")
+                        Text("\(currencyPair.currentAmount)")
+                        Text("\(currencyPair.forex2)")
                         Text(flag2)
                     }
                     RateCard(forex1: "USD", currentRate: 18.6138, forex2: "TRY")
@@ -50,6 +52,6 @@ struct CurrencyPairCard: View {
 
 struct CurrencyPairCard_Previews: PreviewProvider {
     static var previews: some View {
-        CurrencyPairCard()
+        CurrencyPairCard(currencyPair: ModelData().currencyPairs[0])
     }
 }

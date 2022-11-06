@@ -15,22 +15,23 @@ struct MainView: View {
     }
     
     var body: some View {
-        VStack {
-            ForEach(currencyPairs, id: \.self) { currencyPair in
-                VStack {
-                    HStack {
-                        Text(String(format: "%.2f", currencyPair.currentAmount))
-                        Text("\(currencyPair.forex1)")
-                        VStack {
-                            Image(systemName: "arrow.left.and.right")
-                            Text(String(format: "%.4f", currencyPair.currentRate))
-                        }
-                        Text(String(format: "%.2f", currencyPair.currentAmount * currencyPair.currentRate))
-                        Text("\(currencyPair.forex2)")
-                    }
-                }
-            }
-        }
+//        VStack {
+//            ForEach(currencyPairs, id: \.self) { currencyPair in
+//                VStack {
+//                    HStack {
+//                        Text(String(format: "%.2f", currencyPair.currentAmount))
+//                        Text("\(currencyPair.forex1)")
+//                        VStack {
+//                            Image(systemName: "arrow.left.and.right")
+//                            Text(String(format: "%.4f", currencyPair.currentRate))
+//                        }
+//                        Text(String(format: "%.2f", currencyPair.currentAmount * currencyPair.currentRate))
+//                        Text("\(currencyPair.forex2)")
+//                    }
+//                }
+//            }
+//        }
+        CurrencyPairCard(currencyPair: ModelData().currencyPairs[0])
     }
 }
 
