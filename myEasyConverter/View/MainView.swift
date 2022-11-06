@@ -10,9 +10,6 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var modelData: ModelData
     var currencyPair: CurrencyPair
-    var currencyPairs: [CurrencyPair] {
-        modelData.currencyPairs
-    }
     
     var body: some View {
         ZStack {

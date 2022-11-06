@@ -21,10 +21,7 @@ struct CurrencyPairCard: View {
     
     var body: some View {
         ZStack {
-            Color(.systemGray6)
-                .ignoresSafeArea()
             RectangleCard(sizeHeight: 70)
-            
             VStack {
                 HStack {
                     VStack (alignment: .leading){
